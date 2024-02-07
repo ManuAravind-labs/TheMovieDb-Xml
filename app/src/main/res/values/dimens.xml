@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="item_transform_image_length">48dp</dimen>
+    <dimen name="item_movie_width">120dp</dimen>
+    <dimen name="item_movie_height">180dp</dimen>
+    <dimen name="title_size">15sp</dimen>
+</resources>

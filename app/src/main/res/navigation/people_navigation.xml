@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/people_navigation"
+    app:startDestination="@id/peopleDetailsFragment2">
+
+    <fragment
+        android:id="@+id/peopleDetailsFragment2"
+        android:name="com.android4you.moviedb.presentation.people.PeopleDetailsFragment"
+        android:label="PeopleDetailsFragment" />
+</navigation>

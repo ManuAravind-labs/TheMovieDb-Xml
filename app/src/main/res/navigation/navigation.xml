@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.android4you.moviedb.presentation.home.HomeFragment"
+        android:label="@string/home" />
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="com.android4you.moviedb.presentation.movies.MoviesFragment"
+        android:label="@string/movies" >
+        <action
+            android:id="@+id/action_moviesFragment_to_moviesDetailsFragment"
+            app:destination="@id/moviesDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tvShowsFragment"
+        android:name="com.android4you.moviedb.presentation.tvshows.TvShowsFragment"
+        android:label="@string/tv_shows" />
+    <fragment
+        android:id="@+id/peopleFragment"
+        android:name="com.android4you.moviedb.presentation.people.PeopleFragment"
+        android:label="@string/people" >
+        <action
+            android:id="@+id/action_peopleFragment_to_peopleDetailsFragment"
+            app:destination="@id/peopleDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.android4you.moviedb.presentation.settings.SettingsFragment"
+        android:label="@string/settings" />
+    <fragment
+        android:id="@+id/peopleDetailsFragment"
+        android:name="com.android4you.moviedb.presentation.people.PeopleDetailsFragment"
+        android:label="PeopleDetailsFragment" />
+    <fragment
+        android:id="@+id/moviesDetailsFragment"
+        android:name="com.android4you.moviedb.presentation.movies.details.MoviesDetailsFragment"
+        android:label="MoviesDetailsFragment" />
+</navigation>

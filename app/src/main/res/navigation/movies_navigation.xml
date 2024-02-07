@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/movies_navigation"
+    app:startDestination="@id/moviesListFragment">
+
+    <fragment
+        android:id="@+id/moviesListFragment"
+        android:name="com.android4you.moviedb.presentation.movies.popular.PopularMoviesFragment"
+        android:label="MoviesListFragment" >
+        <argument
+            android:name="movie_type"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+    </fragment>
+    <fragment
+        android:id="@+id/topRatedMoviesFragment"
+        android:name="com.android4you.moviedb.presentation.movies.toprated.TopRatedMoviesFragment"
+        android:label="TopRatedMoviesFragment" />
+    <fragment
+        android:id="@+id/nowPlayingMoviesFragment"
+        android:name="com.android4you.moviedb.presentation.movies.nowplaying.NowPlayingMoviesFragment"
+        android:label="NowPlayingMoviesFragment" />
+    <fragment
+        android:id="@+id/upcomingMoviesFragment"
+        android:name="com.android4you.moviedb.presentation.movies.upcoming.UpcomingMoviesFragment"
+        android:label="UpcomingMoviesFragment" />
+</navigation>
